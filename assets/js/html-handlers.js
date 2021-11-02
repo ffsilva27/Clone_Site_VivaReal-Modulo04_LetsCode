@@ -7,6 +7,12 @@ import {topicLocale} from './index.js';
 /* Tratando a localidade para inserção nos filtros */
 
 export function setFilterLocale(locale){
+    if(locale==='SP'||locale==='sp'||locale==='Sp'){
+        locale='São Paulo';
+    }
+    if(locale==='RJ'||locale==='rj'||locale==='Rj'){
+        locale='Rio de Janeiro'
+    }
     let tratedLocale = locale.toLowerCase().split(" ");
     
     getLocaleWithUF(tratedLocale.join());
