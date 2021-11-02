@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Imóveis a venda</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topic">
+                <ul class="menu">
+                    <li><a href="#"><img class="logo" src="./assets/img/logo.PNG" alt="logo Viva Real"></a></li>
+                    <li><a href="">COMPRAR</a></li>
+                    <li><a href="">ALUGAR</a></li>
+                    <li><a href="">IMÓVEIS NOVOS</a></li>
+                    <li><a href="">SELEÇÃO VIVA REAL</a></li>
+                    <li><a href="">DESCOBRIR</a></li>
+                    <li><a href="">FINANCIAMENTO</a></li>
+                </ul>
+                <ul class="menu2">
+                    <li><a href="">ANUNCIAR IMÓVEIS</a></li>
+                    <li><a href="">ENTRAR</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="totalAside">
+            <aside class="search">
+                <div class="itens">
+                    <h5 class="title">LOCALIZAÇÃO DO IMÓVEL</h5>
+                    <input type="text" name="searchValue" class="searchValue" placeholder="Digite uma rua, bairro ou cidade">
+                    <div class="valueSearch">
+                        <button type="button" class="valueFilterLocale"></button>
+                    </div>
+                    <p class="title">IMÓVEL COM<p>
+                    <div class="imovelCom">
+                        <input type="checkbox" class="imovelCom-checkbox" name="" id="imovelCom">
+                        <label for="imovelCom" class="imovelCom-label"></label>
+                        <p>Tour Virtual ou Vídeo</p>
+                    </div>
+                    <p class="title">TIPO DE IMÓVEL</p>
+                    <select name="tipo" class="tipoImovel">
+                        <option value="Mostrar todos">Mostrar todos</option>
+                    </select>
+                    <div class="preco">
+                        <div class="preco2">
+                            <p class="title">PREÇO MÍNIMO</p>
+                            <input type="text" class="precoMaxMin" placeholder="R$"></input>
+                        </div>
+                        <div class="precoQuebra">
+                            <p class="title">PREÇO MÁXIMO</p>
+                            <input type="text" class="precoMaxMin" placeholder="R$         Ilimitado"></input>
+                        </div>
+                    </div>
+                    <p class="title">NÚMERO DE QUARTOS</p>
+                    <div class="nQuartos">
+                        <button type="button">1+</button>
+                        <button type="button">2+</button>
+                        <button type="button">3+</button>
+                        <button type="button">4+</button>
+                        <button type="button">5+</button>
+                    </div>
+                </div>
+            </aside>
+            <aside class="search2">
+                <div class="itens2">
+                    <div class="area">
+                        <div>
+                            <p class="title2">ÁREA MÍNIMA</p>
+                            <input type="text" class="areaMaxMin" placeholder="                      m²"></input>
+                        </div>
+                        <div class="areaQuebra">
+                            <p class="title2">ÁREA MÁXIMA</p>
+                            <input type="text" class="areaMaxMin" placeholder="       ilimitado m²"></input>
+                        </div>
+                    </div>
+                    <p class="title2">NÚMERO DE VAGAS NA GARAGEM</p>
+                    <div class="nVagas">
+                        <button type="button">1+</button>
+                        <button type="button">2+</button>
+                        <button type="button">3+</button>
+                        <button type="button">4+</button>
+                        <button type="button">5+</button>
+                    </div>
+                    <p class="title2">NÚMERO DE BANHEIROS</p>
+                    <div class="nVagas">
+                        <button type="button">1+</button>
+                        <button type="button">2+</button>
+                        <button type="button">3+</button>
+                        <button type="button">4+</button>
+                        <button type="button">5+</button>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        
+        <div class="main2">
+            <section class="mainTopic">
+                <ul class="mainTopicUl">
+                    <li class="first"><a href="">COMPRAR</a></li>
+                    <li><a href="">ALUGAR</a></li>
+                    <li><a href="">IMÓVEIS NOVOS</a></li>
+                    <li><a href="">SELEÇÃO VIVA REAL</a></li>
+                </ul>
+                <div class="totalNumber">
+                    <p class="totalNumberP"></p>
+                    <button type="button" class="topicLocale"></button>
+                </div>
+            </section>
+
+            <section class="totalSearchResult">
+                
+            </section>
+        </div>
+    </main>
+    <script src="./assets/js/index.js" type="module"></script>
+</body>
+</html>

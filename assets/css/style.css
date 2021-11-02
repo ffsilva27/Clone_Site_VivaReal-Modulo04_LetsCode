@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100vw;
+    justify-content: space-around;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #0A8ACC;
+    z-index: 1;
+}
+
+.topic {
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+}
+
+.logo {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    top: -10px;
+}
+
+.menu , .menu2 {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.topic li:hover {
+    background-color:#1098db;
+}
+
+.menu2 li:hover {
+    background-color:#1098db;
+}
+
+.menu li {
+    margin-left: 35px;
+    height: 100%;
+}
+
+.menu2 li {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    line-height: 21px;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+/* ASIDE */
+
+.search {
+    display: flex;
+    position: relative;
+    margin-top: 120px;
+    width: 20vw;
+    margin-left: 55px;
+    background-color: #FDDB87;
+    border-radius: 10px;
+}
+
+.itens {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.searchValue {
+    width: 228px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 8px;
+    padding: 10px;
+}
+
+aside input:focus {
+    outline: none;
+    border: 2px solid #0A8ACC;
+}
+
+/* Campo de inserção da cidade procurada */
+.valueSearch > button {
+    margin-top: 15px;
+    border: none;
+    background-color: #FDDB87;
+    color: #C29255;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.title {
+    color: #C29255;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.imovelCom-checkbox {
+    position: absolute;
+    left: -9999999px;
+}
+
+.imovelCom-label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.imovelCom-label::before,
+.imovelCom-label::after {
+    content: "";
+    transition: all 0.3s ease;
+}
+
+.imovelCom-label::before {
+    display: inline-block;
+    width: 3em;
+    height: 2em;
+    background-color: #E5CF8C;
+    border-radius: 1em;
+}
+
+.imovelCom-label::after {
+    position: absolute;
+    top: 0.05em;
+    left: 0.05em;
+    width: 1.95em;
+    height: 1.95em;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.imovelCom-checkbox:checked + .imovelCom-label::before {
+    background-color: #0A8ACC;
+}
+
+.imovelCom-checkbox:checked + .imovelCom-label::after {
+    left: 1em;
+}
+
+.imovelCom {
+    display: flex;
+    align-content: center;
+    margin-top: 8px;
+}
+
+.imovelCom > p {
+    margin-left: 10px;
+    color: black;
+    font-size: small;
+    font-weight: 1;
+    display: flex;
+    align-items: center;
+}
+
+.tipoImovel {
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    padding: 10px;
+    color: gray;
+}
+
+.preco {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.precoQuebra {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.precoMaxMin {
+    width: 100px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    padding: 10px;
+    color: gray;
+    border: 2px solid white;
+}
+
+.nQuartos {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nQuartos > button {
+    border: none;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 30px;
+    border-radius: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.nQuartos button:hover {
+    background-color: rgb(230, 228, 228);
+}
+
+.nQuartos button:active {
+    background-color: #0A8ACC;
+}
+
+.totalAside {
+    display: flex;
+    flex-direction: column;
+}
+
+.search2 {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    width: 20vw;
+    margin-left: 55px;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 10px;
+}
+
+.itens2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.area {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.areaQuebra {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.areaMaxMin {
+    width: 100px;
+    margin-top: 8px;
+    border-radius: 5px;
+    height: 20px;
+    padding: 10px;
+    color: gray;
+    border: 0.5px solid rgb(206, 205, 205);
+}
+
+.title2 {
+    color: gray;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nVagas {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nVagas > button {
+    
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 30px;
+    border: 0.5px solid rgb(206, 205, 205);
+    border-radius: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.nVagas button:hover {
+    background-color: rgb(230, 228, 228);
+}
+
+.nVagas button:active {
+    background-color: #0A8ACC;
+}
+
+
+/* Main Topic */
+
+.mainTopic {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 120px;
+    height: 25px;
+    width: 70vw;
+    margin-left: 10px;
+}
+
+.mainTopic a {
+    color: #0A8ACC;
+}
+
+.mainTopicUl {
+    display: flex;
+    list-style: none;
+    justify-content:flex-start;
+}
+
+.mainTopicUl .first {
+    border-bottom: 4px solid #0A8ACC;
+}
+
+.mainTopic li {
+    margin-left: 15px;
+    width: 140px;
+    text-align: center;
+}
+
+.totalNumber {
+    margin-left: 33px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.totalNumber p {
+    font-size: 20px;
+}
+
+.topicLocale {
+    width: 0px;
+}
+
+.topicLocale2 {
+    width:max-content;
+    padding: 0px 10px 0px 10px;
+    background-color: white;
+    color: #0A8ACC;
+    cursor: pointer;
+    height: 25px;
+    font-size: 10px;
+    border: 1px solid #0A8ACC;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+/* Search Result */
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.totalSearchResult {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 100px;
+    width: 70vw;
+    
+}
+
+.searchResult {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 70vw;
+    border-radius: 10px;
+    border: 1px solid rgb(206, 205, 205);
+}
+
+.searchResult:hover {
+    box-shadow: 0 0 1em rgb(168, 167, 167);
+    cursor: pointer;
+}
+
+.divSearchImg {
+    display: flex;
+    align-items: center;
+}
+
+.searchImg {
+    width: 336px;
+    height: 216px;
+    border-radius: 10px 0 0 10px;
+}
+
+.searchInfo {
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    flex-direction: column;
+    margin: 15px 15px;
+    justify-content: space-between;
+}
+
+.street {
+    color: gray;
+    font-size: 15px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.infoSearch {
+    font-size: 15px;
+}
+
+.amenities {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amenities li {
+    background-color: #EBEBEB;
+    list-style: none;
+    color: #9b9c9e;
+    border: none;
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+    width: max-content;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.price {
+    margin-top: 15px;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.errorStatus {
+    color: red;
+}
