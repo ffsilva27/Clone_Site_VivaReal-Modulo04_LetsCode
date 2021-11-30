@@ -234,6 +234,11 @@ aside input:focus {
     background-color: #0A8ACC;
 }
 
+.nQuartos button:focus {
+    background-color: #0A8ACC;
+    color: white;
+}
+
 .totalAside {
     display: flex;
     flex-direction: column;
@@ -309,6 +314,11 @@ aside input:focus {
 
 .nVagas button:active {
     background-color: #0A8ACC;
+}
+
+.nVagas button:focus {
+    background-color: #0A8ACC;
+    color: white;
 }
 
 
