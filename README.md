@@ -10,4 +10,4 @@ Criar um clone simplificado do site Viva Real, utilizando CSS, HTML e JS. A pág
 
 [![Vídeo de utilização do site](/Capturar.PNG)](https://youtu.be/aggdoADb0bM)
 
-## Obs.: Clicando na imagem você será direcionado para ver um vídeo da aplicação em funcionamento.
+### Obs.: Clicando na imagem você será direcionado para assistir o projeto funcionando.
